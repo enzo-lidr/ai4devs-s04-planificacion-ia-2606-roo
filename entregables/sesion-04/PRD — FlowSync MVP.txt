@@ -1,0 +1,40 @@
+# PRD — FlowSync MVP
+
+> **Producto**: FlowSync
+> **Versión del documento**: 1.0 · Q3 2026
+> **Estado**: aprobado para MVP
+> **Owner de producto**: equipo FlowSync
+> **Audiencia de este documento**: equipo de ingeniería (backend, frontend), QA, y cualquier agente de IA que vaya a decomponer este PRD en backlog.
+
+---
+
+## 1. Resumen ejecutivo
+
+FlowSync es una aplicación web de gestión de tareas personales que **mantiene sincronizadas las tareas del usuario con su Google Calendar**. El problema que resuelve: las personas gestionan sus pendientes en una herramienta (listas de tareas) y su tiempo en otra (calendario), y mantener ambas alineadas a mano es tedioso y propenso a errores. FlowSync elimina ese trabajo manual: las tareas con fecha aparecen como eventos en el calendario, y los cambios fluyen en ambas direcciones.
+
+El MVP busca validar una hipótesis central: **¿la gente con sobrecarga de herramientas adoptará un gestor de tareas si elimina la doble gestión tarea/calendario?**
+
+### Qué incluye el MVP
+- Registro y autenticación de usuarios.
+- CRUD completo de tareas con estados.
+- Filtrado y organización básica de tareas.
+- Exportación de tareas.
+- Sincronización con Google Calendar (lectura y escritura).
+
+### Qué NO incluye el MVP (out of scope explícito)
+- Equipos o tareas compartidas (FlowSync MVP es estrictamente individual).
+- Sincronización con calendarios que no sean Google (Outlook, iCal: post-MVP).
+- Notificaciones push o por email.
+- Aplicación móvil nativa (solo web responsive).
+- Etiquetas, proyectos, o jerarquías de tareas (subtareas): post-MVP.
+- Recordatorios configurables más allá de los del propio Google Calendar.
+
+---
+
+## 2. Usuario objetivo
+
+**Perfil primario**: profesional del conocimiento (knowledge worker) entre 25 y 45 años, que ya usa Google Calendar a diario para su trabajo y que actualmente gestiona sus pendientes en una herramienta separada (Todoist, Notion, una libreta, o post-its). Tiene entre 5 y 30 tareas activas en un momento dado. Valora la simplicidad y se frustra con herramientas que requieren mantenimiento manual.
+
+**Job to be done**: *"Cuando tengo una tarea con fecha límite, quiero que aparezca en mi calendario sin que yo tenga que copiarla a mano, para no tener que mirar dos sitios distintos para saber qué tengo que hacer hoy."*
+
+---
