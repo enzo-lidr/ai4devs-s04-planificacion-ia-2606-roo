@@ -1,9 +1,15 @@
 # Reflexion: Ejercicio de Descomposicion y Poke-Holes
 
-El proceso de descomponer la user story en tasks con Fibonacci me ayudo a identificar dependencias claras entre infraestructura, endpoints y tests. Lo que mas me sorprchio fue cuantos supuestos tecnicos (asumido) habia ocultos en una aparente simple creacion de endpoint. 
+- ¿Qué te sorprendió del output de la IA?
 
-El patron poke-holes fue muy valioso: reconocimiento 5 gaps criticos en la infraestructura que no habia notado inicialmente, especialmente el tema de indices de base de datos que impacta directamente el requisito no funcional de performance. 
+  - Pedi las pontuaciones de Fibonacci y la portuación es muy grande, tareas sencillas tienen pontuacion alta. Eso genero una aparente compejidad en un story que no es tao largo.
+  - Por exta complejidad, la IA creo Epics y no taks.
 
-Falle en no considerar inicialmente la cardinalidad exacta de User-Task, lo cual el analisis poke-holes revelo como un riesgo de privacidad. Esto demuestra que el patron funciono: encontero cosas que yo no habia visto.
+- ¿Qué falló o tuviste que corregir?
 
-El mayor aprendizaje fue que las historias de usuario sencillas esconden complejidad tecnica que solo se revela con analisis estructurado.
+El primero request para prompt no estaba bien escrito, tuve que parar la analisis pra corigir y retornar las task de forma clara.
+
+- ¿El patrón poke-holes te encontró algo que tú no habías visto?
+
+Por la definicion de la tarea, no deberiamos dar soluciones tecnicas para la IA, por eso, no consideré tambien la defincición de datos y relacion de entidades.
+Me resultó muy interesante ver qyeel poke-holes si centró en eso, claro, ya que no tenia en contexto para definirlo, pero tampoco lo definió en `prompt.md`, en un case OpenSpec, la planificacion teria que ser corrigida.
