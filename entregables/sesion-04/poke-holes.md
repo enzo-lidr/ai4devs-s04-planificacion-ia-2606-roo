@@ -10,6 +10,7 @@ en la zona horaria correcta" pero ni siquiera define qué tipo de
 evento se está creando. Es una decisión de diseño que afecta a todo
 lo demás y nadie la tomó todavía.
 
+
 ## Hallazgo 2 — Token revocado desde Google, no desde FlowSync
 
 El scenario de error solo cubre cuando la API de Google no está
@@ -19,6 +20,7 @@ devuelve la API no es transitorio — es de autorización. En ese
 caso reintentar no sirve de nada. FlowSync necesitaría detectar
 ese tipo de error específico y pedirle al usuario que reconecte
 su cuenta, pero eso no está cubierto en ningún scenario.
+
 
 ## Hallazgo 3 — Nadie guarda el ID del evento de Google
 
@@ -30,6 +32,7 @@ ese dato, las stories de actualización y borrado de evento no se
 pueden implementar — asumen que "el evento correspondiente" existe
 pero no dicen cómo el sistema lo encuentra.
 
+
 ## Hallazgo 4 — ¿Qué pasa cuando se agotan los reintentos?
 
 La story dice que si la API de Google falla, "el sistema reintenta
@@ -39,6 +42,7 @@ usuario ve que su tarea no está sincronizada? ¿Se le avisa de alguna
 forma? ¿Queda en un estado roto sin saberlo? Ese comportamiento
 final necesita definirse porque es lo que el usuario va a vivir
 cuando las cosas salen mal.
+
 
 ## Hallazgo 5 — El reintento puede crear eventos duplicados
 

@@ -2,83 +2,45 @@
 
 ## Rol
 
-Eres un Product Owner senior con experiencia en aplicaciones SaaS
-
-de productividad personal. Conoces bien los patrones de integración
-
-con APIs externas como Google Calendar y entiendes las necesidades
-
-de usuarios que gestionan tareas y tiempo en herramientas separadas.
+Eres un Product Owner senior con experiencia en aplicaciones SaaS de productividad personal. Conoces bien los patrones de integración con APIs externas como Google Calendar y entiendes las necesidades de usuarios que gestionan tareas y tiempo en herramientas separadas.
 
 ## Contexto del producto
 
-FlowSync es una aplicación web de gestión de tareas personales que
+FlowSync es una aplicación web de gestión de tareas personales que mantiene sincronizadas las tareas del usuario con su Google Calendar.
 
-mantiene sincronizadas las tareas del usuario con su Google Calendar.
-
-Está dirigida a profesionales del conocimiento entre 25 y 45 años que
-
-ya usan Google Calendar a diario y gestionan sus pendientes en una
-
-herramienta separada. El problema que resuelve es la doble gestión
-
-manual entre lista de tareas y calendario.
+Está dirigida a profesionales del conocimiento entre 25 y 45 años que ya usan Google Calendar a diario y gestionan sus pendientes en una herramienta separada. El problema que resuelve es la doble gestión manual entre lista de tareas y calendario.
 
 El MVP incluye las siguientes funcionalidades:
-
 - Registro y autenticación de usuarios
-
 - CRUD completo de tareas con estados
-
 - Filtrado y organización básica de tareas
-
 - Exportación de tareas a CSV
-
 - Sincronización con Google Calendar (lectura y escritura)
 
 ## Tu tarea
 
-Extrae todas las user stories del MVP de FlowSync a partir
+Extrae todas las user stories del MVP de FlowSync a partir del PRD que te proporciono a continuación.
 
-del PRD que te proporciono a continuación.
-
-Agrupa las stories por épica. Las épicas deben corresponder
-
-a los módulos funcionales del PRD.
+Agrupa las stories por épica. Las épicas deben corresponder a los módulos funcionales del PRD.
 
 Cada story debe tener:
 
 - Formato: Como [rol], quiero [acción], para [beneficio]
-
-- Entre 3 y 5 criterios de aceptación en formato Given/When/Then
-
-  (incluye siempre: happy path + al menos 1 edge case + al menos 1 caso de error)
+- Entre 3 y 5 criterios de aceptación en formato Given/When/Then (incluye siempre: happy path + al menos 1 edge case + al menos 1 caso de error)
 
 ## Restricciones — qué NO debes hacer
 
 - No incluyas features que estén fuera del scope del MVP:
-
   - Equipos o tareas compartidas
-
   - Sincronización con calendarios que no sean Google (Outlook, iCal)
-
   - Notificaciones push o por email
-
   - Aplicación móvil nativa
-
   - Etiquetas, proyectos o jerarquías de tareas (subtareas)
-
   - Recordatorios configurables más allá de los del propio Google Calendar
-
 - No estimes tiempos ni story points
-
 - No propongas arquitectura técnica ni decisiones de implementación
-
 - No inventes features que no estén mencionadas en el PRD
-
-- Marca con (asumido) cualquier criterio de aceptación que estés
-
-  infiriendo y que no esté literal en el PRD
+- Marca con (asumido) cualquier criterio de aceptación que estés infiriendo y que no esté literal en el PRD
 
 ## Ejemplo del formato esperado
 
@@ -86,11 +48,7 @@ Cada story debe tener:
 
 #### Story: Registro de cuenta
 
-Como visitante de FlowSync,
-
-quiero crear una cuenta con mi email y contraseña,
-
-para acceder a mis tareas desde cualquier dispositivo.
+Como visitante de FlowSync, quiero crear una cuenta con mi email y contraseña, para acceder a mis tareas desde cualquier dispositivo.
 
 ##### Scenario: Registro exitoso
 

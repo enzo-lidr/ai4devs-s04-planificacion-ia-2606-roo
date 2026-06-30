@@ -351,6 +351,7 @@ para tener una copia de mis datos fuera de FlowSync.
 
 ---
 
+
 ## Épica 5: Sincronización con Google Calendar
 
 ### Story: Conectar cuenta de Google
@@ -471,6 +472,7 @@ para que mi calendario no muestre pendientes que ya no existen.
 
 ---
 
+
 ### Story: Desconectar cuenta de Google
 
 Como usuario con Google Calendar conectado,
@@ -500,6 +502,7 @@ para dejar de compartir mi calendario con FlowSync cuando lo desee.
   And la conexión permanece activa hasta que la desconexión se complete correctamente **(asumido)**
 
 ---
+
 
 ## Resumen
 
