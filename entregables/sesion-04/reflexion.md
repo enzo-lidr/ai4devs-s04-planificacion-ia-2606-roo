@@ -1,0 +1,3 @@
+ A pesar que use el modelo más moderno (aparte de Fable) de Anthropic, el segundo prompt encontro cosas valiosas como las limitaciones y restricciones de campos, el tipo de campo para definir si el vencimiento se da a una hora o a las 00:00 del dia marcado o la sincronizacion con el timezone correcto con Google.
+ Es necesaria esta revision y quiza hasta con otro modelo.
+ Te prepara para la sesión de refinement, no?
